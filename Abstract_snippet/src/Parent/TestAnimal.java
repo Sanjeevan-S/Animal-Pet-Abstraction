@@ -1,5 +1,8 @@
 package Parent;
 
+import Child1.Car;
+import Child1.Electric;
+
 public class TestAnimal {
 
 	public static void main(String[] args) {
@@ -28,9 +31,17 @@ public class TestAnimal {
 		e.walk();
 		System.out.println("..............................");
 		
+		p.setName("Juan");
 		p.play();
 		p.getName();
-		p.setName("Juan");
+		System.out.println("..............................");
+		
+		Electric tesla = new Electric();
+		Car honda = new Electric();
+		
+		tesla.Start();
+		honda.Start();
+		
 	}
 
 }
